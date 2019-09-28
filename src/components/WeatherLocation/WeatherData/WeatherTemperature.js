@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 import './styles.css';
 
 
-import {CLOUD, CLOUDY, SUN, RAIN, SNOW, WINDY} from './../../../constants/constants';
+import {CLOUD, SUN, RAIN, SNOW, THUNDER, DRIZZLE} from './../../../constants/constants';
 
 const icons={
     [CLOUD]: "cloud",
-    [CLOUDY]:"cloudy",
     [SUN]: "day-sunny",
     [RAIN]:  "rain",
     [SNOW]:  "snow",
-    [WINDY]: "windy"
+    [THUNDER]: "day-thunderstorme",
+    [DRIZZLE]: "day-showers",
 }
 
 const getWeatherIcon = (weatherState) =>{
