@@ -36,6 +36,13 @@
 .blue {background: blue}
 .details{
   background: #999;
-  height: 100vh;
-  width: 100%;
+  height: 85vh;
+  width: calc(100%-40px); /*restar el padding*/
+  overflow: auto;
+  padding: 5px 20px;
+}
+@media(max-width: 64em){
+  .details{
+    height: 50vh;
+  }
 }

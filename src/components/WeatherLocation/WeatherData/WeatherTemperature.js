@@ -18,7 +18,8 @@ const icons={
 const getWeatherIcon = (weatherState) =>{
     const sizeIcon = "4x";
     const icon = icons[weatherState];
-        return <WeatherIcons className="wicon" name={icon || SUN} size={sizeIcon}/>
+    //debugger;
+        return <WeatherIcons className="wicon" name={icon || icons[SUN]} size={sizeIcon}/>
       
 }
 

@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import CircularProgress from '@material-ui/core/CircularProgress';
+//import CircularProgress from '@material-ui/core/CircularProgress';
 import {PropTypes} from 'prop-types'
 import Location from'./Location';
 import WeatherData from './WeatherData';
 import './WeatherData/styles.css';
 import transformWeather from './../../services/transformWeather';
 import CITY_URL from './../../services//getWeatherUrlByCity';
-import {CLOUD, 
-    /*CLOUDY, SUN, RAIN, SNOW, WINDY*/
-} from './../../constants/constants';
+
 
 
 
@@ -72,8 +70,8 @@ class WeatherLocation extends Component{
         <div className="weatherLocationContainer" onClick={onWeatherLocationClick}>
             <Location city={city} />
             {data? 
-                <WeatherData data={data} />: 
-                <CircularProgress size={50}/>
+                <WeatherData data={data} />:  'Loading'
+                //<CircularProgress size={50}/>
             }
             <button className="react" onClick={this.handleUpdateClick}>{CITIES[this.state.flag]}</button>
         </div>
