@@ -1,0 +1,91 @@
+
+.weatherDataContainer{
+    background-color:rgba(200, 200, 200, 0.5);
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 5px;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+.weatherExtraInfo{
+    width:40%;
+    display: inline-block;
+    line-height: 28px;
+    text-align: left;
+}
+
+.weatherTemperature{
+    width:60%;
+    display: inline-block;
+}
+
+.temperature{
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 20px;
+    color:#333;
+}
+.temperatureType{
+    font-weight: bold;
+    color:#666;
+}
+.extraInfoText{
+    display:block;
+    color:#1535c5;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wicon{
+    color:rgba(255, 72, 0, 1)
+}
+/**************Lcoation********************/
+.locationContainer{
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    padding-left: 10px;
+    color:#888;
+    line-height: 35px;
+    overflow: hidden;
+
+}
+.locationContainer h1{
+    margin:0;
+    white-space: nowrap;
+}
+.weatherLocationContainer{
+    width: calc(100% - 20px);
+    min-width: 230px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    padding: 15px;
+    font-family: 'Roboto', 'sans-serif';
+    box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+button.react {
+    margin-top: 5px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #4288CC;
+    /*box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);*/
+    color: #FFF;
+    line-height: 1.5em;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+button.react:hover {
+    background-color: #4288CC;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.5);
+
+}
